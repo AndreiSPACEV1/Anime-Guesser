@@ -5,7 +5,7 @@ document.getElementById("about").hidden = true;
 document.querySelector(".img-anime").hidden = true;
 async function getAnimeCharacter() {
   setLoading(true);
-  const response = await fetch("https://api.jikan.moe/v4/random/characters");
+  const response = await fetch("https://api.jikan.moe/v4/top/random/characters");
   const data = await response.json();
 
   // Alege un personaj random
